@@ -30,9 +30,9 @@ If CDbl(Replace(WScript.Version,".",",")) < 5.1 then
   Wscript.Quit
 End if
 
-' On verifie que PdfCreator (et Images2Pdfc) est bien installé
+' On verifie que Ghostscript est bien installé
 If Not FileExists(sGSPath) Then
- MsgBox "Ghostscript (CLOE) n'est pas correctement installé. Absence du fichier : " & Images2PdfC, vbExclamation + vbSystemModal, AppTitle
+ MsgBox "Ghostscript (CLOE) n'est pas correctement installé. Absence du fichier : " & sGSPath, vbExclamation + vbSystemModal, AppTitle
  WScript.Quit
 End If
 
