@@ -1,0 +1,35 @@
+/CompatibilityLevel 1.4
+/watermarkText { ( COPIE ARTOIS ) } def
+/watermarkFont { /Helvetica-Bold 72 selectfont } def
+/watermarkColor { 1 0 0 setrgbcolor } def
+/watermarkAngle { 45 } def
+
+/pageWidth { currentpagedevice /PageSize get 0 get } def
+/pageHeight { currentpagedevice /PageSize get 1 get } def
+
+<<
+/EndPage {
+0 .pushpdf14devicefilter % depth .pushpdf14devicefilter -
+2 eq { pop false }
+{
+gsave
+<< >> clippath pathbbox newpath .begintransparencygroup
+.7 .setopacityalpha 1 .setshapealpha
+watermarkFont
+watermarkColor
+pageWidth .5 mul pageHeight .5 mul translate
+0 0 moveto
+watermarkText false charpath flattenpath pathbbox
+4 2 roll pop pop
+0 0 moveto
+watermarkAngle rotate
+-.5 mul exch -.5 mul exch
+rmoveto
+watermarkText show
+.endtransparencygroup
+grestore
+true
+} ifelse
+.poppdf14devicefilter
+} bind
+>> setpagedevice
