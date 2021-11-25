@@ -10,8 +10,8 @@
 ; AutoIt3Wrapper
 #AutoIt3Wrapper_Res_ProductName=filiecopie
 #AutoIt3Wrapper_Res_Description=Permet d'installer l'imprimante virtuelle PDFCreator : FILICOPIE
-#AutoIt3Wrapper_Res_ProductVersion=1.0.0
-#AutoIt3Wrapper_Res_FileVersion=1.0.0
+#AutoIt3Wrapper_Res_ProductVersion=1.2.0
+#AutoIt3Wrapper_Res_FileVersion=1.2.0
 #AutoIt3Wrapper_Res_CompanyName=CNAMTS/CPAM_ARTOIS/APPLINAT
 #AutoIt3Wrapper_Res_LegalCopyright=yann.daniel@assurance-maladie.fr
 #AutoIt3Wrapper_Res_Language=1036
